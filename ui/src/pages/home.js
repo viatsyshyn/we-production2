@@ -18,13 +18,12 @@ class Home extends Component {
 
     render() {
         const {videos, feedback} = this.props;
-        const featured = videos.filter(video => ~video.categories.indexOf('featured'));
-        const showreel = featured.shift();
-        const blog = featured.slice(0, 2);
+        const showreel = videos.filter(video => ~video.categories.indexOf('showreel')).shift();
+        const featured = videos.filter(video => ~video.categories.indexOf('featured')).slice(0, 2);
         return (
             <Fragment>
                 <Showreel {...showreel}/>
-                <AboutUs blog={blog}/>
+                <AboutUs blog={featured}/>
                 <Services/>
                 <Production/>
                 <Crew/>
