@@ -18,15 +18,64 @@
   }],
   "logos": [{
     "title": "Euromedia",
-    "image": "emc.png",
-    "link": ""
+    "image": "Euromedia-Company.png",
+    "link": "http://euromediacompany.com/"
   }, {
-    "title": "MTC",
-    "image": "nova–poshta-1.png",
-    "link": ""
+    "title": "Club4Paws",
+    "image": "Club-4-Paws.png",
+    "link": "http://club4paws.com/"
   }, {
-    "title": "Нова Пошта",
-    "image": "nova–poshta.png",
-    "link": ""
+    "title": "Caritas Ukraine",
+    "image": "Karitas.png",
+    "link": "http://caritas-ua.org/"
+  }, {
+    "title": "CINEX Azerbaijan Film Productions",
+    "image": "Cinex.png",
+    "link": "http://www.cinex-az.com/"
+  }, {
+    "title": "Dodo Socks",
+    "image": "Dodo-Socks.png",
+    "link": "https://dodosocks.com/"
+   }, {
+    "title": "DUNA",
+    "image": "DUNA.png",
+    "link": "http://duna.ua/"
+  }, {
+    "title": "Greencubator",
+    "image": "Greencubator.png",
+    "link": "http://greencubator.info/"
+  }, {
+    "title": "Center for Education and Human Development",
+    "image": "center.png",
+    "link": "https://www.edu-center.in.ua/"
+  }, {
+    "title": "POS Media Ukraine",
+    "image": "POS-Media-Europe.png",
+    "link": "https://www.pos-media.com.ua/"
+   }, {
+    "title": "Susy Production",
+    "image": "Susy-Production.png",
+    "link": "https://www.facebook.com/susy.production/"
+  }, {
+    "title": "Sviat Promo",
+    "image": "Sviat-Promo.png",
+    "link": "https://www.facebook.com/sviatpromo/"
+  }, {
+    "title": "TEDxKyiv",
+    "image": "TEDxKyiv.png",
+    "link": "http://tedxkyiv.com/"
+  }, {
+    "title": "Baku 2015 European Games",
+    "image": "baku2015.png",
+    "link": "https://www.facebook.com/Baku-2015-European-Games-1535372253401978/"
+   }, {
+    "title": "Broadstone Group",
+    "image": "broadstone.png",
+    "link": "http://broadstonegroup.com"
+  }, {
+    "title": "Secret Service Entertainment Agency",
+    "image": "secretservice.png",
+    "link": "http://www.secretservice.com.ua/"
+ 
   }]
 }
