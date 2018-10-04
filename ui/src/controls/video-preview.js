@@ -8,9 +8,8 @@ import './video-preview.css';
 import { connect } from 'react-redux';
 
 import { Localized } from './localized';
-import {push} from "react-router-redux";
 
-export class VideoPreview extends React.Component {
+class VideoPreview_ extends React.Component {
 
     static propTypes = {
         video: PropTypes.any.isRequired
@@ -62,3 +61,5 @@ export class VideoPreview extends React.Component {
         )
     }
 }
+
+export const VideoPreview = connect()(VideoPreview_);
