@@ -54,16 +54,20 @@ class Crew extends React.Component {
                                                     </p>
                                                 </div>
                                                 <div className="block is-hidden-mobile">
-                                                    <a href="javascript:" className="has-text-white is-size-7">
-                                                        <Icon>
-                                                            <i className="fab fa-facebook-f"/>
-                                                        </Icon>
-                                                    </a>
-                                                    <a href="javascript:" className="has-text-white is-size-7">
-                                                        <Icon>
-                                                            <i className="fab fa-twitter"/>
-                                                        </Icon>
-                                                    </a>
+                                                    {person.facebook &&
+                                                        <a href={person.facebook} className="has-text-white is-size-7">
+                                                            <Icon>
+                                                                <i className="fab fa-facebook-f"/>
+                                                            </Icon>
+                                                        </a>
+                                                    }
+                                                    {person.intagram &&
+                                                        <a href={person.intagram} className="has-text-white is-size-7">
+                                                            <Icon>
+                                                                <i className="fab fa-instagram"/>
+                                                            </Icon>
+                                                        </a>
+                                                    }
                                                 </div>
                                             </div>
                                         </div>
