@@ -7,22 +7,6 @@
   "instagram": "https://www.instagram.com/teoneshchadym/",
   "photo": "Mask Group 31.png"
 },{
-  "name_en": "Vasyl Mytsko",
-  "position_en": "Casting-manager, Assistant director",
-  "name_uk": "Василь Мицько",
-  "position_uk": "Кастинг-менеджер, Другий режисер",
-  "facebook": "https://www.facebook.com/vasyl.mytsko",
-  "instagram": "",
-  "photo": "Mask Group 24.png"
-},{
-  "name_en": "Sergiy Kniazev",
-  "position_en": "DoP, Director",
-  "name_uk": "Сергій Князєв",
-  "position_uk": "Оператор-постановник, режисер",
-  "facebook": "https://www.facebook.com/sergiy.knyazev",
-  "instagram": "https://www.instagram.com/sergiy_knyazev/",
-  "photo": "Mask Group 25.png"
-},{
   "name_en": "Gregory Ryba",
   "position_en": "Director, DoP",
   "name_uk": "Григорій Риба",
@@ -31,13 +15,13 @@
   "instagram": "https://www.instagram.com/gregoryryba/",
   "photo": "Mask Group 26.png"
 },{
-  "name_en": "Oleksiy Kaplunsky",
-  "position_en": "Sound director",
-  "name_uk": "Олексій Каплунський",
-  "position_uk": "Звукорежисер",
-  "facebook": "ttps://www.facebook.com/oleksiy.kaplunskiy",
-  "twitter": "",
-  "photo": "Mask Group 32.png"
+  "name_en": "Sergiy Kniazev",
+  "position_en": "DoP, Director",
+  "name_uk": "Сергій Князєв",
+  "position_uk": "Оператор-постановник, режисер",
+  "facebook": "https://www.facebook.com/sergiy.knyazev",
+  "instagram": "https://www.instagram.com/sergiy_knyazev/",
+  "photo": "Mask Group 25.png"
 },{
   "name_en": "Georgiy Dergachov",
   "position_en": "Director",
@@ -54,6 +38,22 @@
   "facebook": "https://www.facebook.com/profile.php?id=100006167132311",
   "twitter": "",
   "photo": "Mask Group 34.png"
+},{
+  "name_en": "Oleksiy Kaplunsky",
+  "position_en": "Sound director",
+  "name_uk": "Олексій Каплунський",
+  "position_uk": "Звукорежисер",
+  "facebook": "ttps://www.facebook.com/oleksiy.kaplunskiy",
+  "twitter": "",
+  "photo": "Mask Group 32.png"
+},{
+  "name_en": "Vasyl Mytsko",
+  "position_en": "Casting-manager, Assistant director",
+  "name_uk": "Василь Мицько",
+  "position_uk": "Кастинг-менеджер, Другий режисер",
+  "facebook": "https://www.facebook.com/vasyl.mytsko",
+  "instagram": "",
+  "photo": "Mask Group 24.png"
 },{
   "name_en": "Sofiya Kondratenko",
   "position_en": "Line producer",
