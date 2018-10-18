@@ -54,7 +54,7 @@ export default class AboutUs extends React.Component {
                     </p>
                     <p className="content">
                         <ActiveLink to="/contact" className="button is-primary is-rounded">
-                            <Translate id="home.order-now"/>
+                            <Translate id="buttons.order-now"/>
                         </ActiveLink>
                     </p>
                 </div>
