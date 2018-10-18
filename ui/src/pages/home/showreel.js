@@ -30,6 +30,13 @@ export default class Showreel extends React.Component {
         window.showreel = this.playerRef.current.player;
         this.scroll$ = fromEvent(window, 'scroll')
             .pipe(
+                map(() => {
+                    const top = document.documentElement.scrollTop
+                        || document.body.parentNode.scrollTop
+                        || document.body.scrollTop;
+
+                    this.playPauseRef.current.style.opacity = top > 10 ? 0 : 1;
+                }),
                 debounceTime(100),
                 map(() => {
                     const top = document.documentElement.scrollTop
