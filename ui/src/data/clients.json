@@ -1,20 +1,60 @@
 {
   "faces": [{
-    "name": "Mammadov",
-    "image": "Mask Group 39.png",
-    "link": ""
+    "name": "Okean Elzy",
+    "image": "oe.png",
+    "link": "https://www.facebook.com/okeanelzyofficial/"
   }, {
-    "name": "Тоня Матвієнко",
-    "image": "Mask Group 41.png",
-    "link": ""
+    "name": "Oy Sound System",
+    "image": "oyss.png",
+    "link": "https://www.facebook.com/OySoundSystem/"
   }, {
-    "name": "Eldar",
-    "image": "Mask Group 42.png",
-    "link": ""
+    "name": "Eldar Gasimov",
+    "image": "eldar.png",
+    "link": "https://www.facebook.com/GasimovEldar"
   }, {
     "name": "Ruslana",
     "image": "Mask Group 43.png",
-    "link": ""
+    "link": "https://www.facebook.com/ruslana.lyzhychko.5"
+  }, {
+    "name": "Maria Iaremchuk",
+    "image": "jaremchuk.png",
+    "link": "https://www.facebook.com/mashmashmash"
+  }, {
+    "name": "Samra Rahimli",
+    "image": "samra.png",
+    "link": "https://www.facebook.com/SamraEurovision/"
+  }, {
+    "name": "Sofia Rol",
+    "image": "sofia.png",
+    "link": "https://www.facebook.com/profile.php?id=100005225351928"
+  }, {
+    "name": "Yasinska",
+    "image": "yasinska.png",
+    "link": "https://www.facebook.com/lyudmyla.yasinska"
+  }, {
+    "name": "Farid Mammadov",
+    "image": "Mask Group 39.png",
+    "link": "https://www.facebook.com/azerilife"
+  }, {
+    "name": "Tonia Matvienko",
+    "image": "tonia.png",
+    "link": "https://www.facebook.com/a.matviyenko"
+  }, {
+    "name": "Bright Children of Ukraine",
+    "image": "Brightchildren.png",
+    "link": "https://www.facebook.com/brightchildrenua/"
+  }, {
+    "name": "Baku 2015",
+    "image": "baku2015.png",
+    "link": "http://www.baku2015.com/"
+  }, {
+    "name": "Rio 2016",
+    "image": "rio.png",
+    "link": "https://www.olympic.org/rio-2016"
+  }, {
+    "name": "Tbilisi 2015",
+    "image": "tbilisi2015.png",
+    "link": "http://tbilisi2015.com/en/"
   }],
   "logos": [{
     "title": "Euromedia",
