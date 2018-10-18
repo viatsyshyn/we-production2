@@ -114,7 +114,7 @@ export default class Showreel extends React.Component {
                     ref={this.playerRef}
                     onEnd={() => this.restart()}
                 />
-                <a href="#" className={`showreel-play has-text-light is-mouse-active ${this.state.playing ? '' : 'is-paused'}`}
+                <a href="javascript:" className={`showreel-play has-text-light is-mouse-active ${this.state.playing ? '' : 'is-paused'}`}
                    ref={this.playPauseRef}
                    onClick={e => this.togglePlay(e)}
                    onMouseMove={() => this.showPauseButton()}
