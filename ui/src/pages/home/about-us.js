@@ -45,7 +45,9 @@ export default class AboutUs extends React.Component {
                         <Translate id="title"/>
                     </h1>
                     <p className="subtitle is-4 has-font-caveat has-text-primary">
-                        <Translate id="home.about-us.slogan"/>
+                        <Translate id="home.about-us.slogan.a"/>
+                        <br/>
+                        <Translate id="home.about-us.slogan.b"/>
                     </p>
                     <p className="content is-size-6">
                         <ul>
