@@ -20,22 +20,22 @@ class FollowUs_ extends React.Component {
         return (
             <Fragment>
                 {this.props.children}
-                <a href={facebook} className={this.props.className} onClick={() => this.track('Facebook')}>
+                <a href={facebook} className={this.props.className} target="_blank" onClick={() => this.track('Facebook')}>
                     <Icon>
                         <i className="fab fa-facebook-f"/>
                     </Icon>
                 </a>
-                <a href={instagram} className={this.props.className} onClick={() => this.track('Twitter')}>
+                <a href={instagram} className={this.props.className} target="_blank" onClick={() => this.track('Twitter')}>
                     <Icon>
                         <i className="fab fa-instagram"/>
                     </Icon>
                 </a>
-                <a href={vimeo} className={this.props.className} onClick={() => this.track('Vimeo')}>
+                <a href={vimeo} className={this.props.className} target="_blank" onClick={() => this.track('Vimeo')}>
                     <Icon>
                         <i className="fab fa-vimeo"/>
                     </Icon>
                 </a>
-                <a href={youtube} className={this.props.className} onClick={() => this.track('Youtube')}>
+                <a href={youtube} className={this.props.className} target="_blank" onClick={() => this.track('Youtube')}>
                     <Icon>
                         <i className="fab fa-youtube"/>
                     </Icon>

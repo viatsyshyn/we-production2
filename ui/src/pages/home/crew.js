@@ -55,14 +55,14 @@ class Crew extends React.Component {
                                                 </div>
                                                 <div className="block is-hidden-mobile">
                                                     {person.facebook &&
-                                                        <a href={person.facebook} className="has-text-white is-size-7">
+                                                        <a href={person.facebook} target="_blank" className="has-text-white is-size-7">
                                                             <Icon>
                                                                 <i className="fab fa-facebook-f"/>
                                                             </Icon>
                                                         </a>
                                                     }
                                                     {person.intagram &&
-                                                        <a href={person.intagram} className="has-text-white is-size-7">
+                                                        <a href={person.intagram} target="_blank" className="has-text-white is-size-7">
                                                             <Icon>
                                                                 <i className="fab fa-instagram"/>
                                                             </Icon>
