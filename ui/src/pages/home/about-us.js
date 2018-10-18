@@ -5,7 +5,7 @@ import { Translate } from "react-localize-redux";
 import { ActiveLink } from '../../controls';
 
 import { fromEvent } from 'rxjs';
-import { map } from "rxjs/operators/index";
+import { map, debounceTime } from "rxjs/operators/index";
 
 import './about-us.css';
 
@@ -14,22 +14,20 @@ export default class AboutUs extends React.Component {
     aboutUsRef = React.createRef();
 
     componentDidMount() {
-        this.scroll$ = fromEvent(window, 'scroll')
-            .pipe(
-                map(() => {
-                    const top = document.documentElement.scrollTop
-                        || document.body.parentNode.scrollTop
-                        || document.body.scrollTop;
-
-                    if (window.innerWidth > 960+64+64) {
-                        const height = Math.ceil(window.innerWidth * .56);
-                        const currentScrollPos = window.pageYOffset;
-                        this.aboutUsRef.current.style.transform = `translate(0, ${top > 50 ? Math.min(0, currentScrollPos - height) : 0}px)`;
-                        this.aboutUsRef.current.style.opacity = top > 50 ? Math.min(1, .3 + currentScrollPos / height * 2) : 0;
-                    }
-                })
-            )
-            .subscribe();
+        setTimeout(() => {
+            this.scroll$ = fromEvent(window, 'scroll')
+                .pipe(
+                    map(() => {
+                        if (window.innerWidth > 960 + 64 + 64) {
+                            const height = Math.ceil(window.innerWidth * .56);
+                            const currentScrollPos = window.pageYOffset;
+                            this.aboutUsRef.current.style.transform = `translate(0, ${currentScrollPos > 200 ? Math.min(0, currentScrollPos - height) : 0}px)`;
+                            this.aboutUsRef.current.style.opacity = currentScrollPos > 200 ? Math.min(1, currentScrollPos / height * 2) : 0;
+                        }
+                    })
+                )
+                .subscribe();
+        }, 100)
     }
 
     componentWillUnmount() {
