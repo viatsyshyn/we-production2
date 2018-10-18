@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 
 import Showreel from './home/showreel';
 import AboutUs from './home/about-us';
+import Portfolio from './home/portfolio';
 import Services from './home/services';
 import Production from './home/production';
 import Crew from './home/crew';
@@ -23,7 +24,8 @@ class Home extends Component {
         return (
             <Fragment>
                 <Showreel {...showreel}/>
-                <AboutUs blog={featured}/>
+                <AboutUs/>
+                <Portfolio blog={featured}/>
                 <Services/>
                 <Production/>
                 <Crew/>

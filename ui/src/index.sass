@@ -1,18 +1,24 @@
 @import "layout/colors"
 
+$tablet: 768px
+
 @import "bulma/bulma"
 
 body
-  background-color: $light
   color: $dark
   font-family: 'Roboto', sans-serif
   font-weight: 400
 
 section
   min-height: 35vw
+  position: relative
+  z-index: 1
 
 section:nth-child(2n)
-  background-color: $white
+  background-color: $light
+
+section:nth-child(2n+1)
+  background-color: white
 
 nav + section
   background-color: inherit !important

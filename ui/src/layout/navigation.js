@@ -59,7 +59,7 @@ export default class Navigation extends React.Component {
                             || document.body.parentNode.scrollTop
                             || document.body.scrollTop;
 
-                        navbar.classList.toggle('is-transparent', top < 50);
+                        navbar.classList.toggle('is-transparent', top < window.innerWidth * .56);
                     }
                 })
             )

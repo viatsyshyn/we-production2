@@ -1,0 +1,13 @@
+@import "layout/colors"
+@import "bulma/sass/utilities/mixins"
+
+.about-us
+  +desktop()
+    &.section
+      background-color: transparentize(#000b21, .5)
+      height: 56.25vw
+      z-index: 1
+      position: relative
+
+    .title, .content
+      color: white
