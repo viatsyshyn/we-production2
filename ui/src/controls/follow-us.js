@@ -16,7 +16,7 @@ class FollowUs_ extends React.Component {
     }
 
     render() {
-        const { facebook, twitter, youtube, vimeo } = this.props.contacts;
+        const { facebook, instagram, youtube, vimeo } = this.props.contacts;
         return (
             <Fragment>
                 {this.props.children}
@@ -25,9 +25,9 @@ class FollowUs_ extends React.Component {
                         <i className="fab fa-facebook-f"/>
                     </Icon>
                 </a>
-                <a href={twitter} className={this.props.className} onClick={() => this.track('Twitter')}>
+                <a href={instagram} className={this.props.className} onClick={() => this.track('Twitter')}>
                     <Icon>
-                        <i className="fab fa-twitter"/>
+                        <i className="fab fa-instagram"/>
                     </Icon>
                 </a>
                 <a href={vimeo} className={this.props.className} onClick={() => this.track('Vimeo')}>
