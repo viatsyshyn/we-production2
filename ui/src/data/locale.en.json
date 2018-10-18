@@ -10,11 +10,17 @@
     "pause-showreel": "Pause",
     "call-now": "Call now",
     "all": "All",
-    "follow-us": "Follow us"
+    "follow-us": "Follow us",
+    "order-now": ""
   },
   "home": {
     "link": "Home",
-    "about-us": "Full-service video production studio based in Lviv, Ukraine. Filming and producing video anywhere in the world.",
+    "about-us": {
+      "slogan": "Full-service video production studio based in Lviv, Ukraine. Filming and producing video anywhere in the world.",
+      "a": "",
+      "b": "",
+      "c": ""
+    },
     "our-portfolio": "We are proud of our work",
     "clients": {
       "header": "We love our partners",
