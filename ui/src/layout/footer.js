@@ -45,13 +45,14 @@ class Footer extends React.Component {
                         </div>
                         <div className="column is-one-third-desktop is-hidden-touch">
                             <div className="block">
-                                <h3 className="title is-5 is-spaced has-text-light">Latest News</h3>
-                                <p className="is-size-7">Don't miss our future videos, news, and weekly tips. Join over
-                                    20,000 beautiful
-                                    people and sign up to our email newsletter.</p>
-                            </div>
-                            <div className="block">
-                                <input className="input" type="email" />
+                                <h3 className="title is-5 is-spaced has-text-light">
+                                    <Translate id="title"/>
+                                </h3>
+                                <p className="subtitle is-7 has-text-white">
+                                    <Translate id="home.about-us.slogan.a"/>
+                                    <br/>
+                                    <Translate id="home.about-us.slogan.b"/>
+                                </p>
                             </div>
                             <div className="block content is-size-6">
                                 <FollowUs location="Footer">
