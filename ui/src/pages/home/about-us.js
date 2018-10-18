@@ -21,10 +21,12 @@ export default class AboutUs extends React.Component {
                         || document.body.parentNode.scrollTop
                         || document.body.scrollTop;
 
-                    const height = Math.ceil(window.innerWidth * .56);
-                    const currentScrollPos = window.pageYOffset;
-                    this.aboutUsRef.current.style.transform = `translate(0, ${top > 10 ? Math.min(0, currentScrollPos - height) : 0}px)`;
-                    this.aboutUsRef.current.style.opacity = top > 10 ? Math.min(1, .3 + currentScrollPos / height * 2) : 0;
+                    if (window.innerWidth > 960+64+64) {
+                        const height = Math.ceil(window.innerWidth * .56);
+                        const currentScrollPos = window.pageYOffset;
+                        this.aboutUsRef.current.style.transform = `translate(0, ${top > 10 ? Math.min(0, currentScrollPos - height) : 0}px)`;
+                        this.aboutUsRef.current.style.opacity = top > 10 ? Math.min(1, .3 + currentScrollPos / height * 2) : 0;
+                    }
                 })
             )
             .subscribe();
