@@ -35,7 +35,7 @@ export default class Showreel extends React.Component {
                         || document.body.parentNode.scrollTop
                         || document.body.scrollTop;
 
-                    this.playPauseRef.current.style.opacity = top > 10 ? 0 : 1;
+                    this.playPauseRef.current.style.opacity = top > 50 ? 0 : '';
                 }),
                 debounceTime(100),
                 map(() => {
