@@ -61,8 +61,8 @@ class Crew extends React.Component {
                                                             </Icon>
                                                         </a>
                                                     }
-                                                    {person.intagram &&
-                                                        <a href={person.intagram} target="_blank" className="has-text-white is-size-7">
+                                                    {person.instagram &&
+                                                        <a href={person.instagram} target="_blank" className="has-text-white is-size-7">
                                                             <Icon>
                                                                 <i className="fab fa-instagram"/>
                                                             </Icon>
