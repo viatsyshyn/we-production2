@@ -11,14 +11,14 @@ import bulmaCarousel from "bulma-extensions/bulma-carousel/dist/js/bulma-carouse
 class Clients extends React.Component {
 
     componentDidMount() {
-        bulmaCarousel.attach();
+        bulmaCarousel.attach('.clients .carousel');
     }
 
     render() {
         const { faces, logos } = this.props;
 
         return (
-            <section className="section">
+            <section className="section clients">
                 <div className="container">
                     <div className="block">
                         <div className="block" style={{marginBottom: '4rem'}}>
