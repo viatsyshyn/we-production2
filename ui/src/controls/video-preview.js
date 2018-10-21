@@ -12,7 +12,8 @@ import { Localized } from './localized';
 class VideoPreview_ extends React.Component {
 
     static propTypes = {
-        video: PropTypes.any.isRequired
+        video: PropTypes.any.isRequired,
+        withHover: PropTypes.bool
     };
 
     play() {
@@ -23,7 +24,7 @@ class VideoPreview_ extends React.Component {
     }
 
     render() {
-        const { className, preview, duration, video } = this.props;
+        const { className, preview, duration, withHover } = this.props;
         const { title_en, title_uk } = this.props;
         const { description_en, description_uk } = this.props;
         const { tags_en, tags_uk } = this.props;
@@ -31,8 +32,11 @@ class VideoPreview_ extends React.Component {
         const sec = duration % 60;
         const min = Math.floor(duration / 60);
 
+        // disabled until descriptions are in place
+        const hasHover = false && withHover && (description_en || description_uk);
+
         return (
-            <article className={className}>
+            <article className={`video-cnt ${className||''} ${hasHover ? 'has-hover' : ''}`}>
                 <div className="block video-preview">
                     <p className="video-category is-uppercase">
                         <Localized en={tags_en.join(' | ')} uk={tags_uk.join(' | ')}/>
@@ -49,14 +53,16 @@ class VideoPreview_ extends React.Component {
                         </Icon>
                     </a>
                 </div>
-                <div className="block">
-                    <p className="title is-4 is-spaced">
+                <div className="block video-details">
+                    <p className="title is-4">
                         <Localized en={title_en} uk={title_uk}/>
                     </p>
+                </div>
+                {hasHover && <div className="block video-hover">
                     <p className="content is-size-7">
                         <Localized en={description_en} uk={description_uk}/>
                     </p>
-                </div>
+                </div>}
             </article>
         )
     }

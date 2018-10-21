@@ -25,7 +25,7 @@ export default class Production extends React.Component {
                     <div className="columns is-variable is-8 is-multiline">
                         <div className="column is-narrow-desktop is-full-touch">
                             <div className="desktop-410">
-                                <h2 className="title is-1 is-spaced">
+                                <h2 className="title is-1">
                                     <Translate id="home.production.header"/>
                                 </h2>
                                 <p className="subtitle is-4 is-spaced has-font-caveat has-text-primary">

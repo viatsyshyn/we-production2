@@ -84,7 +84,7 @@ class Videos extends React.Component {
                     <div className="columns is-variable is-8 is-multiline">
                         {visible_videos.map((video, index) => (
                             <div key={index} className="column is-full-mobile is-half-tablet is-one-third-fullhd">
-                                <VideoPreview {...video}/>
+                                <VideoPreview {...video} withHover/>
                             </div>
                         ))}
                     </div>

@@ -1,4 +1,62 @@
 @import "layout/colors"
+@import "bulma/sass/utilities/mixins"
+
+.video-cnt
+  position: relative
+
+  +desktop()
+    //padding: 2rem 2rem 0
+
+    .video-hover
+      position: absolute
+      z-index: 3
+      opacity: 0
+      height: 0
+      pointer-events: none
+      width: calc(100% - 4rem)
+
+      &::before
+        position: absolute
+        content: ' '
+        background-color: white
+        top: 0
+        left: -2rem
+        right: -2rem
+        bottom: -2rem
+        border: solid $primary
+        border-width: 0 1px 1px
+        z-index: 1
+        box-shadow: 3px 3px 4px transparentize(#000, .75)
+
+      .content
+        position: relative
+        z-index: 3
+
+    &.has-hover:hover
+      background-color: white
+
+      .video-hover
+        opacity: 1
+        height: initial
+        pointer-events: initial
+
+      &::before
+        position: absolute
+        content: ' '
+        top: 0
+        left: 0
+        right: 0
+        bottom: calc(2rem - 1px)
+        border: solid $primary
+        border-width: 1px 1px 0
+        box-shadow: 3px 3px 4px transparentize(#000, .75)
+
+.video-hover
+  .content
+    white-space: pre-wrap
+
+.video-details
+  margin-bottom: 3rem
 
 .video-preview
   position: relative
@@ -42,5 +100,5 @@
   color: #ccc
 
   &:hover
-    color: #ddd
+    color: #eee
     opacity: .5

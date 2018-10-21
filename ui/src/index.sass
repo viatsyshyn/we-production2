@@ -7,14 +7,20 @@ $tablet: 768px
 @import "bulma-extensions/bulma-carousel/src/sass/index"
 
 body
+  scroll-behavior: smooth
+  background-color: $light
   color: $dark
   font-family: 'Roboto', sans-serif
   font-weight: 400
 
 section
-  min-height: 35vw
+  min-height: 45vw
   position: relative
   z-index: 1
+
+.section
+  +desktop()
+    padding: 9rem 1.5rem 4.5rem
 
 section:nth-child(2n)
   background-color: $light
@@ -43,3 +49,7 @@ nav + section
   .desktop-360
     width: 300px
 
+
+.button.is-wide
+  padding-left: 4rem
+  padding-right: 4rem

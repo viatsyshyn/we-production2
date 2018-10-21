@@ -17,7 +17,7 @@ class Crew extends React.Component {
             <section className="section">
                 <div className="container">
                     <div className="block">
-                        <h2 className="title is-1 is-spaced">
+                        <h2 className="title is-1">
                             <Translate id="home.crew.header"/>
                         </h2>
                         <p className="subtitle is-4 is-spaced has-font-caveat has-text-primary">

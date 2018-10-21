@@ -21,8 +21,8 @@ class Clients extends React.Component {
             <section className="section">
                 <div className="container">
                     <div className="block">
-                        <div className="block">
-                            <h2 className="title is-1 is-spaced">
+                        <div className="block" style={{marginBottom: '4rem'}}>
+                            <h2 className="title is-1">
                                 <Translate id="home.clients.header"/>
                             </h2>
                         </div>
@@ -30,7 +30,7 @@ class Clients extends React.Component {
                             <h4 className="title is-5 is-spaced has-text-centered">
                                 <Translate id="home.clients.faces"/>
                             </h4>
-                            <div className="carousel carousel-animated carousel-animate-slide" data-autoplay data-size="5">
+                            <div className="carousel carousel-animated carousel-animate-slide" data-autoplay data-delay="2000" data-size="5">
                                 <div className='carousel-container'>
                                     {faces.map((face, index) => (
                                         <a href={face.link} className="carousel-item face-block" key={index} target="_blank">

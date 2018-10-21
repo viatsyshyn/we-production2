@@ -60,12 +60,14 @@ export default class Services extends React.Component {
                                     <p className="title is-4 is-size-3-touch">
                                         <Translate id={`services.${service}.header`}/>
                                     </p>
-                                    <div className="button is-primary is-outlined is-rounded">
+                                    <div className="button is-primary is-outlined is-rounded is-size-5 is-wide">
                                         <Translate id="buttons.details"/>
-                                        &nbsp;
-                                        <Icon>
-                                            <i className="fas fa-arrow-right"></i>
-                                        </Icon>
+                                        &nbsp; &nbsp;
+                                        <span className="is-size-6">
+                                            <Icon>
+                                                <i className="fas fa-arrow-right"></i>
+                                            </Icon>
+                                        </span>
                                     </div>
                                 </div>
                             </div>

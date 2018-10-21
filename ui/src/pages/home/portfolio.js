@@ -5,6 +5,8 @@ import { Translate } from "react-localize-redux";
 
 import { VideoPreview, ActiveLink, Reveal } from "../../controls";
 
+import './portfolio.css';
+
 export default class Portfolio extends React.Component {
 
     state = {
@@ -29,11 +31,11 @@ export default class Portfolio extends React.Component {
                                     <Reveal refs={this.categoryRefs} config={{ duration: 1000 }} delay={50}>
                                         {categories.map((category, index) => (
                                             <div key={category} ref={this.categoryRefs[index]} className="column is-half-mobile is-one-third-tablet has-text-centered" style={{padding: '3rem 1rem'}}>
-                                                <ActiveLink to={`/videos/${category}`} className="block has-text-dark home-video-category-reveal">
-                                                    <figure className="image is-48x48 is-inline-block">
-                                                        <Image src={`/categories/video-${encodeURI(category)}.png`}/>
+                                                <ActiveLink to={`/videos/${category}`} className="block home-video-category-reveal">
+                                                    <figure className="image is-64x64 is-inline-block">
+                                                        <Image src={`/categories/video-${encodeURI(category)}.svg`}/>
                                                     </figure>
-                                                    <p className="title is-4">
+                                                    <p className="title is-4 is-spaced">
                                                         <Translate id={`video.categories.${category}`}/>
                                                     </p>
                                                 </ActiveLink>

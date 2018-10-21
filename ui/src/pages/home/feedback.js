@@ -16,8 +16,8 @@ class Feedback extends React.Component {
         return (
             <section className="section">
                 <div className="container">
-                    <div className="block">
-                        <h2 className="title is-1 is-spaced">
+                    <div className="block" style={{marginBottom: '4rem'}}>
+                        <h2 className="title is-1">
                             <Translate id="home.feedback"/>
                         </h2>
                     </div>

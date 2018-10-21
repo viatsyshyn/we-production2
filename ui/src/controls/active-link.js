@@ -10,17 +10,19 @@ class ActiveLink_ extends React.Component {
         className: PropTypes.string,
         disabled: PropTypes.bool,
         onNavigate: PropTypes.func,
-        exact: PropTypes.bool
+        exact: PropTypes.bool,
+        style: PropTypes.object
     };
 
     render() {
-        const {tagName, children, className, disabled, to: href, onNavigate, navigateTo, localize: { languages }, exact } = this.props;
+        const {tagName, children, className, disabled, to: href, onNavigate, navigateTo, localize: { languages }, exact, style } = this.props;
         const activeLanguage = languages.find(l => l.active);
         const to = exact ? href : `/${activeLanguage ? activeLanguage.code : 'en'}${href}`;
         const whiteList = {
             className,
             disabled,
-            to
+            to,
+            style
         };
 
         const navigate = e => {
