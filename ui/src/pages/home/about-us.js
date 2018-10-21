@@ -33,7 +33,9 @@ export default class AboutUs extends React.Component {
                             opacity = currentScrollPos > scrollThreshold
                                 ? Math.min(1, (currentScrollPos - scrollThreshold) / (height - scrollThreshold - 100))
                                 : 0;
-                            paddingTop = 30 * (.25-opacity/4)
+                            paddingTop = currentScrollPos > scrollThreshold ?
+                                8 * (1 - Math.min(1, (currentScrollPos - scrollThreshold) / height))
+                                : 0;
                         }
 
                         this.aboutUsRef.current.style.transform = `translate(0, ${translateY}px)`;

@@ -39,7 +39,7 @@ class Feedback extends React.Component {
                         </h2>
                     </div>
                     <div className="block">
-                        <div className="carousel carousel-animated carousel-animate-slide" data-autoplay data-delay="15000">
+                        <div className="carousel carousel-animated carousel-animate-fade" data-autoplay data-delay="15000">
                             <div className='carousel-container'>
                                 {feedback.map((active) => (
                                     <div className="carousel-item">
