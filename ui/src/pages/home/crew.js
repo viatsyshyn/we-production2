@@ -37,6 +37,13 @@ class Crew extends React.Component {
                                         <div key={index} className="crew-member" ref={this.crewRefs[index]}>
                                             <figure className="image is-64x64 is-inline-block is-hidden-tablet">
                                                 <Image src={"/crew/" + encodeURI(person.photo)} />
+                                                {person.facebook &&
+                                                <a href={person.facebook} target="_blank" className="has-text-white is-size-7">
+                                                    <Icon>
+                                                        <i className="fab fa-facebook-f"/>
+                                                    </Icon>
+                                                </a>
+                                                }
                                             </figure>
                                             <figure className="image is-128x128 is-inline-block is-hidden-desktop is-hidden-mobile">
                                                 <Image src={"/crew/" + encodeURI(person.photo)} />
