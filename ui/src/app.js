@@ -43,7 +43,7 @@ class App extends Component {
         
         this.props.initialize({
             languages,
-            options: { renderToStaticMarkup, defaultLanguage }
+            options: { renderToStaticMarkup, defaultLanguage, renderInnerHtml: true }
         });
 
         this.props.addTranslationForLanguage(localeEN, "en");
