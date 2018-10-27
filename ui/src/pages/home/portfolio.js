@@ -35,7 +35,7 @@ export default class Portfolio extends React.Component {
                                                     <figure className="image is-64x64 is-inline-block">
                                                         <Image src={`/categories/video-${encodeURI(category)}.svg`}/>
                                                     </figure>
-                                                    <p className="title is-4 is-spaced">
+                                                    <p className="title is-4 is-size-5-mobile is-spaced">
                                                         <Translate id={`video.categories.${category}`}/>
                                                     </p>
                                                 </ActiveLink>
