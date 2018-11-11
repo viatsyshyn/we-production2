@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const sitemap = require('sitemap');
 const request = require('request');
 const latinize = require('./src/lib/latinize');
 
@@ -111,6 +112,45 @@ nonSPA_Router.get('/*', (req,res) => {
         description: locale_en.description,
     });
 });
+
+function getRoutesFor(lang) {
+    return [
+        `/${lang}/welcome`,
+        `/${lang}/contact`,
+        `/${lang}/service/project`,
+        `/${lang}/service/crew`,
+        `/${lang}/service/drone`,
+        `/${lang}/service/multicam`,
+        `/${lang}/video`,
+        `/${lang}/video/promotion`,
+        `/${lang}/video/corporate`,
+        `/${lang}/video/social`,
+        `/${lang}/video/sport`,
+        `/${lang}/video/music`,
+        `/${lang}/video/concerts`,
+    ].map((key) => ({
+        url: key,
+        changefreq: 'daily'
+    }))
+}
+
+function getSiteMap(req) {
+    const host = req.headers.host;
+    const protocol = req.header('X-Forwarded-Proto') || 'http';
+    return sitemap.createSitemap({
+        hostname: `${protocol}://${host}`,
+        cacheTime: 24 * 3600 * 1000,
+        urls: [
+            ...getRoutesFor('en'),
+            ...getRoutesFor('uk'),
+        ]
+    });
+}
+
+app.get('/sitemap.xml', (req, res) => {
+    res.header('Content-Type', 'application/xml');
+    res.send( getSiteMap(req).toString() );
+})
 
 app.use('/', SPA_Router, nonSPA_Router);
 

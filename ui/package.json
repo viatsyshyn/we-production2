@@ -8,7 +8,7 @@
     "bulma": "^0.7.1",
     "bulma-extensions": "^3.0.0",
     "custom-react-scripts": "^0.2.2",
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "history": "^4.7.2",
     "jade": "^1.11.0",
     "lodash": "^4.17.10",
@@ -32,6 +32,7 @@
     "request": "^2.87.0",
     "rxjs": "^6.2.1",
     "scrollreveal": "^3.4.0",
+    "sitemap": "^2.1.0",
     "webpack": "^3.12.0"
   },
   "scripts": {
