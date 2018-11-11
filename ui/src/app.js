@@ -72,15 +72,19 @@ class App extends Component {
                             <Route exact path="/" render={() => <Redirect to={`/${this.defaultLanguage}/welcome`}/>}/>
                             <Route path="/:locale" component={({match : { params: { locale } }}) => (
                                 <Translate>
-                                    {({setActiveLanguage}) => {
-                                        setActiveLanguage(locale);
+                                    {({setActiveLanguage, languages}) => {
+                                        setActiveLanguage(languages.some(language => language.code === locale) ? locale : this.defaultLanguage);
                                     }}
                                 </Translate>
                             )}/>
                             <Switch>
+                                <Route path="/welcome" component={() => <Redirect to={`/${this.defaultLanguage}/welcome`}/>} />
+                                <Route path="/about-us" component={() => <Redirect to={`/${this.defaultLanguage}/welcome`}/>} />
                                 <Route path="/:locale/welcome" component={Home} />
+                                <Route path="/video*" component={() => <Redirect to={`/${this.defaultLanguage}/videos`}/>} />
                                 <Route path="/:locale/videos/:category?/:tag?" component={Videos} />
                                 <Route path="/:locale/services/:service?" component={Services} />
+                                <Route path="/contact*" component={() => <Redirect to={`/${this.defaultLanguage}/contact`}/>} />
                                 <Route path="/:locale/contact" component={Contacts} />
                                 <Route component={PageNotFound}/>
                             </Switch>
