@@ -19,7 +19,8 @@ export default class Showreel extends React.Component {
     sectionRef = React.createRef();
 
     state = {
-        playing: false
+        playing: false,
+        visible: true,
     };
 
     componentWillUnmount() {
@@ -36,6 +37,16 @@ export default class Showreel extends React.Component {
                         || document.body.scrollTop;
 
                     this.playPauseRef.current.style.opacity = top > 200 ? 0 : '';
+
+                    if (top > 3000 && this.state.visible) {
+                        this.setState({
+                            visible: false
+                        })
+                    } else if (top < 4000 && !this.state.visible) {
+                        this.setState({
+                            visible: true
+                        })
+                    }
                 }),
                 debounceTime(100),
                 map(() => {
@@ -106,7 +117,7 @@ export default class Showreel extends React.Component {
         return (
             <section className="hero showreel" ref={this.sectionRef}>
                 <Vimeo
-                    className="showreel-body"
+                    className={`showreel-body ${this.state.visible ? '' : 'hidden'}`}
                     autoplay={false}
                     video={video}
                     muted={false}
@@ -114,7 +125,8 @@ export default class Showreel extends React.Component {
                     ref={this.playerRef}
                     onEnd={() => this.restart()}
                 />
-                <a href="javascript:" className={`showreel-play has-text-light is-mouse-active ${this.state.playing ? '' : 'is-paused'}`}
+                <a href="javascript:"
+                   className={`showreel-play has-text-light is-mouse-active ${this.state.playing ? '' : 'is-paused'}`}
                    ref={this.playPauseRef}
                    onClick={e => this.togglePlay(e)}
                    onMouseMove={() => this.showPauseButton()}

@@ -127,9 +127,10 @@ export class Vimeo extends React.Component {
                 className={this.props.className}
                 src={this.getUrl()}
                 ref={this.containerRef}
-                webkitallowfullscreen=""
-                mozallowfullscreen=""
+                webkitallowfullscreen
+                mozallowfullscreen
                 allowFullScreen
+                allow="autoplay"
             />
         );
     }

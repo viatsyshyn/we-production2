@@ -6,6 +6,9 @@
   height: 56.25vw
   z-index: 0
 
+  .hidden
+    opacity: 0
+
   &-body
     position: fixed
     top: 0
@@ -33,6 +36,9 @@
     &.is-paused
       opacity: .75
       transition: opacity .1s ease-in-out
+
+    &.needs-interaction
+      pointer-events: none
 
     .content:first-child
       margin-top: 25%

@@ -42,7 +42,7 @@ class VideoPreview_ extends React.Component {
                         <Localized en={tags_en.join(' | ')} uk={tags_uk.join(' | ')}/>
                     </p>
                     <figure className="image is-19by9">
-                        <img src={preview['1080']} alt=""/>
+                        <img src={preview['1080']} alt="" key={preview['1080']}/>
                     </figure>
                     <div className="video-duration">
                         {min}:{sec > 9 ? sec : `0${sec}`}
