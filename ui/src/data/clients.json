@@ -42,19 +42,7 @@
   }, {
     "name": "Bright Children of Ukraine",
     "image": "Brightchildren.png",
-    "link": "https://www.facebook.com/brightchildrenua/"
-  }, {
-    "name": "Baku 2015",
-    "image": "baku2015.png",
-    "link": "http://www.baku2015.com/"
-  }, {
-    "name": "Rio 2016",
-    "image": "rio.png",
-    "link": "https://www.olympic.org/rio-2016"
-  }, {
-    "name": "Tbilisi 2015",
-    "image": "tbilisi2015.png",
-    "link": "http://tbilisi2015.com/en/"
+    "link": "https://www.facebook.com/brightchildrenua/"  
   }],
   "logos": [{
     "title": "Euromedia",
@@ -74,8 +62,16 @@
     "link": "http://www.cinex-az.com/"
   }, {
     "title": "Dodo Socks",
-    "image": "Dodo-Socks.png",
+    "image": "dodo.png",
     "link": "https://dodosocks.com/"
+   }, {
+    "title": "Plan.NET Ukraine",
+    "image": "serviceplan.png",
+    "link": "https://www.serviceplan.com"
+   }, {
+    "title": "East European Foundation",
+    "image": "easteurope.png",
+    "link": "http://eef.org.ua/"
    }, {
     "title": "DUNA",
     "image": "DUNA.png",
@@ -104,14 +100,6 @@
     "title": "TEDxKyiv",
     "image": "TEDxKyiv.png",
     "link": "http://tedxkyiv.com/"
-  }, {
-    "title": "Baku 2015 European Games",
-    "image": "baku2015.png",
-    "link": "https://www.facebook.com/Baku-2015-European-Games-1535372253401978/"
-   }, {
-    "title": "Broadstone Group",
-    "image": "broadstone.png",
-    "link": "http://broadstonegroup.com"
   }, {
     "title": "Secret Service Entertainment Agency",
     "image": "secretservice.png",
