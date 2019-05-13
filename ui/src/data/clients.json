@@ -53,10 +53,6 @@
     "image": "Club-4-Paws.png",
     "link": "http://club4paws.com/"
   }, {
-    "title": "Secret Service Entertainment Agency",
-    "image": "secretservice.png",
-    "link": "http://www.secretservice.com.ua/"
-  }, {
     "title": "POS Media Ukraine",
     "image": "POS-Media-Europe.png",
     "link": "https://www.pos-media.com.ua/"
@@ -64,15 +60,18 @@
     "title": "Dodo Socks",
     "image": "dodo.png",
     "link": "https://dodosocks.com/"
-   }, {
+  }, {
     "title": "East European Foundation",
     "image": "easteurope.png",
     "link": "http://eef.org.ua/"
-   }, {
+  }, {
+    "title": "Secret Service Entertainment Agency",
+    "image": "secretservice.png",
+    "link": "http://www.secretservice.com.ua/"}, {
     "title": "Caritas Ukraine",
     "image": "Karitas.png",
     "link": "http://caritas-ua.org/"
-   }, {
+  }, {
     "title": "DUNA",
     "image": "DUNA.png",
     "link": "http://duna.ua/"
