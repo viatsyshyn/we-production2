@@ -45,33 +45,33 @@
     "link": "https://www.facebook.com/brightchildrenua/"  
   }],
   "logos": [{
-    "title": "Euromedia",
-    "image": "Euromedia-Company.png",
-    "link": "http://euromediacompany.com/"
+    "title": "Plan.NET Ukraine",
+    "image": "serviceplan.png",
+    "link": "https://www.serviceplan.com"
   }, {
     "title": "Club4Paws",
     "image": "Club-4-Paws.png",
     "link": "http://club4paws.com/"
   }, {
-    "title": "Caritas Ukraine",
-    "image": "Karitas.png",
-    "link": "http://caritas-ua.org/"
+    "title": "Secret Service Entertainment Agency",
+    "image": "secretservice.png",
+    "link": "http://www.secretservice.com.ua/"
   }, {
-    "title": "CINEX Azerbaijan Film Productions",
-    "image": "Cinex.png",
-    "link": "http://www.cinex-az.com/"
+    "title": "POS Media Ukraine",
+    "image": "POS-Media-Europe.png",
+    "link": "https://www.pos-media.com.ua/"
   }, {
     "title": "Dodo Socks",
     "image": "dodo.png",
     "link": "https://dodosocks.com/"
    }, {
-    "title": "Plan.NET Ukraine",
-    "image": "serviceplan.png",
-    "link": "https://www.serviceplan.com"
-   }, {
     "title": "East European Foundation",
     "image": "easteurope.png",
     "link": "http://eef.org.ua/"
+   }, {
+    "title": "Caritas Ukraine",
+    "image": "Karitas.png",
+    "link": "http://caritas-ua.org/"
    }, {
     "title": "DUNA",
     "image": "DUNA.png",
@@ -81,14 +81,14 @@
     "image": "Greencubator.png",
     "link": "http://greencubator.info/"
   }, {
+    "title": "CINEX Azerbaijan Film Productions",
+    "image": "Cinex.png",
+    "link": "http://www.cinex-az.com/"
+  }, {
     "title": "Center for Education and Human Development",
     "image": "center.png",
     "link": "https://www.edu-center.in.ua/"
   }, {
-    "title": "POS Media Ukraine",
-    "image": "POS-Media-Europe.png",
-    "link": "https://www.pos-media.com.ua/"
-   }, {
     "title": "Susy Production",
     "image": "Susy-Production.png",
     "link": "https://www.facebook.com/susy.production/"
@@ -101,9 +101,10 @@
     "image": "TEDxKyiv.png",
     "link": "http://tedxkyiv.com/"
   }, {
-    "title": "Secret Service Entertainment Agency",
-    "image": "secretservice.png",
-    "link": "http://www.secretservice.com.ua/"
+    "title": "Euromedia",
+    "image": "Euromedia-Company.png",
+    "link": "http://euromediacompany.com/"
+  }, {
  
   }]
 }
